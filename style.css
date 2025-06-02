@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "League Spartan", sans-serif;
+}
+p{
+    font-size:.9em;
+}
+#main-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100vw;
+    position:relative;
+    background:hsl(180, 52%, 96%);
+}
+.bg-container{
+    position:absolute;
+    width:100%;
+    height:100px;
+    top:0;
+    background:hsl(180, 29%, 50%);
+}
+.bg-container>*{
+    height:100%;
+    width:100%;
+}
+.bg-desktop{
+    display:none;
+}
+.lngs-container{
+    margin-top:90px;
+}
+.jobs-container{
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+.job-main, .lngs-container{
+    display:flex;
+    justify-content:center;
+    width:85vw;
+    max-width:1100px;
+    background:hsl(0, 0%, 100%);
+    box-shadow:1px 4px 10px hsla(180, 29%, 50%, .3);
+    border-radius:5px;
+    position:relative;
+}
+.lngs-main{
+    display:none;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    max-width:1000px;
+}
+.sub-lngs{
+    display:flex;
+    align-items:center;
+}
+.rmv-lng{
+    background:hsl(180, 29%, 50%);
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:0 5px 5px 0;
+}
+.clear-lngs{
+    font-weight:700;
+    color:hsl(180, 8%, 52%);
+    text-transform:capitalize;
+}
+.job-main{
+    margin-bottom:40px;
+    padding-top:20px;
+}
+.sub-job-main{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:90%;
+    max-width:1000px;
+}
+.c-img{
+    position:absolute;
+    height:40px;
+    width:40px;
+    top:-20px;
+}
+.c-desc{
+    display:flex;
+    align-items:center;
+    margin-top:10px;
+}
+.job-desc{
+    border-bottom:1px solid hsla(180, 8%, 52%, .5);
+    width:100%;
+}
+.job-desc>*{
+    margin-bottom:10px;
+}
+.job-lngs{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    margin:20px 0 10px 0;
+}
+.job-lngs>*{
+    margin-right:10px;
+}
+.c-name{
+    font-weight:700;
+    color:hsl(180, 29%, 50%);
+    margin-right:20px;
+    font-size:1em;
+}
+.j-class{
+    background:hsl(180, 14%, 20%);
+    display:flex;
+    height:23px;
+    width:90px;
+    justify-content:center;
+    align-items:center;
+    border-radius:30px;
+    font-weight:500;
+    text-transform:uppercase;
+    font-size:.83em;
+    color:hsl(0, 0%, 100%);
+}
+.j-duration{
+    background:hsl(180, 29%, 50%);
+    display:flex;
+    height:23px;
+    width:50px;
+    justify-content:center;
+    align-items:center;
+    border-radius:30px;
+    font-weight:500;
+    text-transform:uppercase;
+    color:hsl(0, 0%, 100%);
+    margin-right:5px;
+    font-size:.83em;
+}
+.j-pos{
+    color:hsl(180, 14%, 20%);
+    font-weight:700;
+}
+.j-det{
+    color:hsla(180, 8%, 52%, .9);
+    font-weight:400;
+}
+.lng{
+    padding:10px;
+    background:hsl(180, 31%, 95%);
+    color:hsl(180, 29%, 50%);
+    font-weight:700;
+    margin-bottom:10px;
+    font-size:.89em;
+    border-radius:5px;
+}
+.featured{
+    border-left:5px solid hsl(180, 29%, 50%);
+}
+.listings{
+    border-radius:5px 0 0 5px;
+    font-size:.83em;
+}
+@media (min-width:725px){
+    .bg-mobile{
+        display:none;
+    }
+    .bg-desktop{
+        display:flex;
+    }
+    .c-img{
+        position:relative;
+        height:100px;
+        width:100px;
+        top:0;
+        margin-right:20px;
+    }
+    .job-main{
+        flex-direction:row;
+        align-items:center;
+    }
+    .job-main .lng:hover{
+        color:hsl(0, 0%, 100%);
+        background:hsl(180, 29%, 50%);
+    }
+    .sub-job-main{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:15px;
+    }
+    .job-desc{
+        border:none;
+    }
+    .job-container .job-main{
+        padding:0;
+    }
+    .job-lngs{
+        margin:20px 0 10px 0;
+    }
+    .rmv-lng:hover{
+        background:hsl(180, 14%, 20%);
+    }    
+    .clear-lngs:hover{
+        text-decoration:underline;
+        color:hsl(180, 29%, 50%);
+    }
+}
