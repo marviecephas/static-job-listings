@@ -202,6 +202,7 @@ p{
     }
     .job-lngs{
         margin:20px 0 10px 0;
+        flex-wrap:no-wrap;
     }
     .rmv-lng:hover{
         background:hsl(180, 14%, 20%);
@@ -209,5 +210,8 @@ p{
     .clear-lngs:hover{
         text-decoration:underline;
         color:hsl(180, 29%, 50%);
+    }
+    .lngs-listings{
+        flex-wrap:wrap;
     }
 }
