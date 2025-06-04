@@ -205,6 +205,11 @@ p{
     }
     .job-lngs{
         margin:20px 0 10px 0;
+        flex-direction:row;
+        flex-wrap:nowrap;
+    }
+    .lngs-listings{
+        flex-wrap:wrap;
     }
     .rmv-lng:hover{
         background:hsl(180, 14%, 20%);
@@ -212,16 +217,5 @@ p{
     .clear-lngs:hover{
         text-decoration:underline;
         color:hsl(180, 29%, 50%);
-    }
-}
-@media (min-width:1000px)
-{
-    .job-lngs{
-        margin:20px 0 10px 0;
-        flex-direction:row;
-        flex-wrap:nowrap;
-    }
-    .lngs-listings{
-        flex-wrap:wrap;
     }
 }
