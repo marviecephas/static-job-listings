@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
         det.innerHTML = `${value.postedAt} • ${value.contract} • ${value.location}`;
         jobDes.appendChild(pos);
         jobDes.appendChild(det);
-        let skills = [value.position, value.role, ...value.languages, ...value.tools];
+        let skills = [value.role, ...value.languages, ...value.tools];
         let jobLngs = job.querySelector('.job-lngs');
         jobLngs.innerHTML = '';
         skills.forEach(value => {
